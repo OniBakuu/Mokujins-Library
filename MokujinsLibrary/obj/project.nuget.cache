@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "KLlEYmrx1TEy78iWLYzmgihhF37snnhzcwF3j25ma6CFIQADi8imQNXd7HsLPI0i2HgN9FYqkItPrv8xhC2Img==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jaeger\\RiderProjects\\Mokujins-Library\\MokujinsLibrary\\MokujinsLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jaeger\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Jaeger\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Jaeger\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Jaeger\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Jaeger\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Jaeger\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
