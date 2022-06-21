@@ -42,6 +42,10 @@
               "target": "Package",
               "version": "[2.16.0, )"
             },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Http.Headers;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using MokujinsLibrary.Dtos;
 using MokujinsLibrary.Entities;
 using MokujinsLibrary.Repositories;
@@ -19,10 +20,12 @@ namespace MokujinsLibrary.Controllers
     public class MovesController: ControllerBase
     {
         private readonly IMoveRepo repos;
+        private readonly ILogger<MovesController> logger;
 
-        public MovesController(IMoveRepo reposit)
+        public MovesController(IMoveRepo reposit, ILogger<MovesController> logger)
         {
             repos = reposit;
+            this.logger = logger;
         }
 
         //GET /moves/{character}

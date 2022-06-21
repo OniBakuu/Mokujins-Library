@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5VKr459VnYUtxoJoIFgOvFpXEW0mwaLSoBnGqmThFdB1FV22PpTStHySSn111JyWnDJAV2EPHa04rtKvuKpaiw==",
+  "dgSpecHash": "/gbDd0xYnHQhJGp5q9Z7/GT9kEvV7PUKgOKMtzndBYR2/g9PTU25OMX1VBRqpPQpran6kz/MQNi2+hX91Eq2zg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Jaeger\\RiderProjects\\Mokujins-Library\\MokujinsLibrary\\MokujinsLibrary.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Jaeger\\.nuget\\packages\\castle.core\\5.0.0\\castle.core.5.0.0.nupkg.sha512",
     "C:\\Users\\Jaeger\\.nuget\\packages\\dnsclient\\1.6.0\\dnsclient.1.6.0.nupkg.sha512",
     "C:\\Users\\Jaeger\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Jaeger\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
@@ -13,15 +14,18 @@
     "C:\\Users\\Jaeger\\.nuget\\packages\\mongodb.driver\\2.16.0\\mongodb.driver.2.16.0.nupkg.sha512",
     "C:\\Users\\Jaeger\\.nuget\\packages\\mongodb.driver.core\\2.16.0\\mongodb.driver.core.2.16.0.nupkg.sha512",
     "C:\\Users\\Jaeger\\.nuget\\packages\\mongodb.libmongocrypt\\1.5.2\\mongodb.libmongocrypt.1.5.2.nupkg.sha512",
+    "C:\\Users\\Jaeger\\.nuget\\packages\\moq\\4.18.1\\moq.4.18.1.nupkg.sha512",
     "C:\\Users\\Jaeger\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
     "C:\\Users\\Jaeger\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\Jaeger\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\Jaeger\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
     "C:\\Users\\Jaeger\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
     "C:\\Users\\Jaeger\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Jaeger\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "C:\\Users\\Jaeger\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
     "C:\\Users\\Jaeger\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
-    "C:\\Users\\Jaeger\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
+    "C:\\Users\\Jaeger\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\Jaeger\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }
