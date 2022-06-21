@@ -25,8 +25,6 @@ C:\Users\Jaeger\RiderProjects\MokujinsLibrary\MokujinsLibrary\obj\Debug\net6.0\r
 C:\Users\Jaeger\RiderProjects\MokujinsLibrary\MokujinsLibrary\obj\Debug\net6.0\MokujinsLibrary.pdb
 C:\Users\Jaeger\RiderProjects\MokujinsLibrary\MokujinsLibrary\obj\Debug\net6.0\MokujinsLibrary.genruntimeconfig.cache
 C:\Users\Jaeger\RiderProjects\MokujinsLibrary\MokujinsLibrary\obj\Debug\net6.0\ref\MokujinsLibrary.dll
-C:\Users\Jaeger\RiderProjects\Mokujins-Library\MokujinsLibrary\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\Jaeger\RiderProjects\Mokujins-Library\MokujinsLibrary\bin\Debug\net6.0\appsettings.json
 C:\Users\Jaeger\RiderProjects\Mokujins-Library\MokujinsLibrary\bin\Debug\net6.0\MokujinsLibrary.exe
 C:\Users\Jaeger\RiderProjects\Mokujins-Library\MokujinsLibrary\bin\Debug\net6.0\MokujinsLibrary.deps.json
 C:\Users\Jaeger\RiderProjects\Mokujins-Library\MokujinsLibrary\bin\Debug\net6.0\MokujinsLibrary.runtimeconfig.json
@@ -68,3 +66,5 @@ C:\Users\Jaeger\RiderProjects\Mokujins-Library\MokujinsLibrary\bin\Debug\net6.0\
 C:\Users\Jaeger\RiderProjects\Mokujins-Library\MokujinsLibrary\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
 C:\Users\Jaeger\RiderProjects\Mokujins-Library\MokujinsLibrary\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
 C:\Users\Jaeger\RiderProjects\Mokujins-Library\MokujinsLibrary\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
+C:\Users\Jaeger\RiderProjects\Mokujins-Library\MokujinsLibrary\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Jaeger\RiderProjects\Mokujins-Library\MokujinsLibrary\bin\Debug\net6.0\appsettings.json

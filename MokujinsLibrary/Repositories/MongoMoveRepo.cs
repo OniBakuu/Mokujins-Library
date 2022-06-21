@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using MokujinsLibrary.Entities;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
@@ -20,33 +21,33 @@ namespace MokujinsLibrary.Repositories
             movesCollection = database.GetCollection<Move>(collectionName);
         }
         
-        public IEnumerable<Move> GetMoves(string character)
+        public async Task<IEnumerable<Move>> GetCharMovesAsync(string character)
         {
             var filter = filterBuilder.Eq(move => move.character, character);
-            return movesCollection.Find(filter).ToList();
+            return await movesCollection.Find(filter).ToListAsync();
         }
 
-        public Move GetMove(string character, string input)
+        public async Task<Move> GetMoveAsync(string character, string input)
         {
             var filter = filterBuilder.Where(move => move.character == character && move.input == input);
-            return movesCollection.Find(filter).SingleOrDefault();
+            return await movesCollection.Find(filter).SingleOrDefaultAsync();
         }
 
-        public void CreateMove(Move move)
+        public async Task CreateMoveAsync(Move move)
         {
-            movesCollection.InsertOne(move);
+            await movesCollection.InsertOneAsync(move);
         }
 
-        public void UpdateMove(Move move)
+        public async Task UpdateMoveAsync(Move move)
         {
             var filter = filterBuilder.Where(existingMove => existingMove.character == move.character && existingMove.input == move.input);
-            movesCollection.ReplaceOne(filter, move);
+            await movesCollection.ReplaceOneAsync(filter, move);
         }
 
-        public void DeleteMove(string character, string input)
+        public async Task DeleteMoveAsync(string character, string input)
         {
             var filter = filterBuilder.Where(move => move.character == character && move.input == input);;
-            movesCollection.DeleteOne(filter);
+            await movesCollection.DeleteOneAsync(filter);
         }
     }
 }

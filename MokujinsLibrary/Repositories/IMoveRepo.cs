@@ -1,14 +1,15 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using MokujinsLibrary.Entities;
 
 namespace MokujinsLibrary.Repositories
 {
     public interface IMoveRepo
     {
-        IEnumerable<Move> GetMoves(string character);
-        Move GetMove(string input, string character);
-        void CreateMove(Move move);
-        void UpdateMove(Move move);
-        void DeleteMove(string character, string input);
+        Task<IEnumerable<Move>> GetCharMovesAsync(string character);
+        Task<Move> GetMoveAsync(string input, string character);
+        Task CreateMoveAsync(Move move);
+        Task UpdateMoveAsync(Move move);
+        Task DeleteMoveAsync(string character, string input);
     }
 }
