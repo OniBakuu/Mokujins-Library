@@ -1,9 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mime;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http.Features;
+using Microsoft.AspNetCore.Http.Headers;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Mvc;
 using MokujinsLibrary.Dtos;
 using MokujinsLibrary.Entities;
 using MokujinsLibrary.Repositories;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace MokujinsLibrary.Controllers
 {
@@ -11,14 +17,14 @@ namespace MokujinsLibrary.Controllers
     [Route("moves")]
     public class MovesController: ControllerBase
     {
-        private readonly IInMemMoveRepo repos;
+        private readonly IMoveRepo repos;
 
-        public MovesController(IInMemMoveRepo reposit)
+        public MovesController(IMoveRepo reposit)
         {
             repos = reposit;
         }
 
-        //GET /moves
+        //GET /moves/{character}
         [HttpGet("{character}")]
         public IEnumerable<MoveDto> GetCharMoves(string character)
         {
@@ -26,8 +32,8 @@ namespace MokujinsLibrary.Controllers
             return moves;
         }
         
-        //GET /moves/{character}/{input}
-        [HttpGet("{character}, {input}")]
+        //GET /moves/{character}, {input}
+        [HttpGet("{character}/{input}")]
         public ActionResult<MoveDto> GetMove(string character, string? input)
         {
             var move = repos.GetMove(character, input);
@@ -43,9 +49,11 @@ namespace MokujinsLibrary.Controllers
 
         //POST /moves
         [HttpPost]
+        [Route("create")]
         public ActionResult<MoveDto> CreateMove(CreateMoveDto moveDto)
         {
-            Move move = new Move()
+            
+            Move move = new()
             {
                 character = moveDto.character,
                 moveName = moveDto.moveName,
@@ -58,10 +66,10 @@ namespace MokujinsLibrary.Controllers
             };
             repos.CreateMove(move);
             
-            return CreatedAtAction(nameof(GetMove), move.AsDto());
+            return CreatedAtAction(nameof(CreateMove),move.AsDto());
         }
 
-        // PUT /moves/{character}/{input}
+        // PUT /moves/{character}, {input}
         [HttpPut("{character}, {input}")]
         public ActionResult UpdateMove(string character, string input, UpdateMoveDto moveDto)
         {

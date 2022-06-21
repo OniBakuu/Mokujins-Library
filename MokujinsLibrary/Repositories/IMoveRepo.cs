@@ -3,7 +3,7 @@ using MokujinsLibrary.Entities;
 
 namespace MokujinsLibrary.Repositories
 {
-    public interface IInMemMoveRepo
+    public interface IMoveRepo
     {
         IEnumerable<Move> GetMoves(string character);
         Move GetMove(string input, string character);

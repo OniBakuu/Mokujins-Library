@@ -1,5 +1,8 @@
-﻿namespace MokujinsLibrary.Entities
+﻿using MongoDB.Bson.Serialization.Attributes;
+
+namespace MokujinsLibrary.Entities
 {
+    [BsonIgnoreExtraElements]
     public record Move
     {
         public string character { get; init; }

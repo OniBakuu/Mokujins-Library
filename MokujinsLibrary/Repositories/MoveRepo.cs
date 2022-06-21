@@ -4,7 +4,7 @@ using MokujinsLibrary.Entities;
 
 namespace MokujinsLibrary.Repositories
 {
-    public class InMemMoveRepo : IInMemMoveRepo
+    public class MoveRepo : IMoveRepo
     {
         private readonly List<Move> moves = new()
         {
